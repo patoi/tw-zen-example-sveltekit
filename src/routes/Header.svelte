@@ -5,7 +5,7 @@
 </script>
 
 <header>
-	<div id="example-zen-spin-forever" class="corner zen zen-spin-forever p-0 text-2xl">
+	<div id="example-zen-spin-forever" class="corner zen-spin-forever p-0 text-2xl">
 		<a href="https://kit.svelte.dev">
 			<img src={logo} alt="SvelteKit" />
 		</a>
@@ -31,7 +31,7 @@
 		</svg>
 	</nav>
 
-	<div id="example-zen-spin-with-pause" class="corner zen zen-pause zen-spin-forever">
+	<div id="example-zen-spin-with-pause" class="corner zen-pause zen-spin-forever">
 		<a href="https://github.com/sveltejs/kit">
 			<img src={github} alt="GitHub" />
 		</a>

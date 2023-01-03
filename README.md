@@ -34,14 +34,14 @@ https://github.com/patoi/tw-zen-example-sveltekit/blob/main/src/routes/%2Bpage.s
 ```html
 
 <!-- page.svelte -->
-<div id="example-zen-fade" class="zen zen-fade ...">
-<div id="example-zen-pop-up-always" class="zen zen-pop-up">
-<div id="example-zen-pop-up-only-once" class="zen zen-once zen-pop-up">
-<p id="example-zen-from-left" class="zen zen-from-left ...">
+<div id="example-zen-fade" class="zen-fade ...">
+<div id="example-zen-pop-up-always" class="zen-pop-up">
+<div id="example-zen-pop-up-only-once" class="zen-once zen-pop-up">
+<p id="example-zen-from-left" class="zen-from-left ...">
 <p id="example-zen-from-left" class="zen-from-right ...">
 <!-- Header.svelte -->
-<div id="example-zen-spin-forever" class="corner zen zen-spin-forever ...">
-<div id="example-zen-spin-with-pause" class="corner zen zen-pause zen-spin-forever">
+<div id="example-zen-spin-forever" class="... zen-spin-forever">
+<div id="example-zen-spin-with-pause" class="... zen-pause zen-spin-forever">
 ```
 
 Read more about classes: https://github.com/patoi/tw-zen/blob/master/README.md

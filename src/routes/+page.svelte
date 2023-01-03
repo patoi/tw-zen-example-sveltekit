@@ -16,26 +16,26 @@
 
 <section class="flex flex-col">
 	<h1>
-		<div id="example-zen-fade" class="zen zen-fade text-6xl font-bold">
+		<div id="example-zen-fade" class="zen-fade text-6xl font-bold">
 			<picture>
 				<source srcset={welcome} type="image/webp" />
 				<img src={welcome_fallback} alt="Welcome" />
 			</picture>
 		</div>
 
-		<div id="example-zen-pop-up-always" class="zen zen-pop-up">
+		<div id="example-zen-pop-up-always" class="zen-pop-up">
 			to your new<br />SvelteKit app
 		</div>
 	</h1>
 
 	<h2 class="text-center mt-12">
-		<div id="example-zen-pop-up-only-once" class="zen zen-once zen-pop-up">
+		<div id="example-zen-pop-up-only-once" class="zen-once zen-pop-up">
 			try editing <strong>src/routes/+page.svelte</strong>
 		</div>
 	</h2>
 
 	<div class="mt-12 h-96">
-		<p id="example-zen-from-left" class="zen zen-from-left w-1/3 text-center m-auto">
+		<p id="example-zen-from-left" class="zen-from-left w-1/3 text-center m-auto">
 			Vivamus pharetra sed erat dignissim scelerisque. Fusce dapibus libero feugiat, porta quam ut,
 			aliquet turpis. Nunc faucibus arcu ac viverra suscipit.
 		</p>
