@@ -1,38 +1,47 @@
-# create-svelte
+# SvelteKit + TailwindCSS + TW Zen Example
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This example shows how to use [TailwindCSS](https://tailwindcss.com/) and [TW Zen](https://github.com/patoi/tw-zen) animation plugin with SvelteKit.
 
-## Creating a project
+## Create animation
 
-If you're seeing this, you've probably already done this step. Congrats!
+1. Add `plugin` and `safelist` in TailwindCSS configuration [TailwindCSS Config](https://github.com/patoi/tw-zen-example-nextjs/blob/main/tailwind.config.js) :
 
-```bash
-# create a new project in the current directory
-pnpm create svelte@latest
-
-# create a new project in my-app
-pnpm create svelte@latest my-app
+```text
+  plugins: [require('tw-zen')],
+  safelist: ['zen--suspend', 'zen--animate', 'zen--reduced']
 ```
 
-## Developing
+2. Initialize TW Zen zero-dependency intersection handler with `onMount` on the page:
 
-Once you've created a project and installed dependencies with `pnpm install`, start a development server:
+```typescript
+<script>
+	...
+	import { onMount } from 'svelte';
+	import twZenInit from 'tw-zen/init.js';
 
-```bash
-pnpm dev
-
-# or start the server and open the app in a new browser tab
-pnpm dev -- --open
+	onMount(() => {
+		twZenInit();
+	});
+</script>
 ```
 
-## Building
+3. Add TW classes, for example:
 
-To create a production version of your app:
+https://github.com/patoi/tw-zen-example-sveltekit/blob/main/src/routes/Header.svelte
 
-```bash
-pnpm build
+https://github.com/patoi/tw-zen-example-sveltekit/blob/main/src/routes/%2Bpage.svelte
+
+```html
+
+<!-- page.svelte -->
+<div id="example-zen-fade" class="zen zen-fade ...">
+<div id="example-zen-pop-up-always" class="zen zen-pop-up">
+<div id="example-zen-pop-up-only-once" class="zen zen-once zen-pop-up">
+<p id="example-zen-from-left" class="zen zen-from-left ...">
+<p id="example-zen-from-left" class="zen-from-right ...">
+<!-- Header.svelte -->
+<div id="example-zen-spin-forever" class="corner zen zen-spin-forever ...">
+<div id="example-zen-spin-with-pause" class="corner zen zen-pause zen-spin-forever">
 ```
 
-You can preview the production build with `pnpm preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Read more about classes: https://github.com/patoi/tw-zen/blob/master/README.md
