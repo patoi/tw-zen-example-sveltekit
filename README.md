@@ -2,6 +2,8 @@
 
 This example shows how to use [TailwindCSS](https://tailwindcss.com/) and [TW Zen](https://github.com/patoi/tw-zen) animation plugin with SvelteKit.
 
+Try it: `pnpm install && pnpm dev`, open: http://localhost:5173 and shrink the page to scrolling.
+
 ## Create animation
 
 1. Add `plugin` and `safelist` in TailwindCSS configuration [TailwindCSS Config](https://github.com/patoi/tw-zen-example-nextjs/blob/main/tailwind.config.js) :
