@@ -9,7 +9,7 @@ Try it: `pnpm install && pnpm dev`, open: http://localhost:5173 and shrink the p
 1. Add `plugin` and `safelist` in TailwindCSS configuration [TailwindCSS Config](https://github.com/patoi/tw-zen-example-nextjs/blob/main/tailwind.config.js) :
 
 ```text
-  plugins: [require('tw-zen')],
+  plugins: [require('tw-zen-plugin')],
   safelist: ['zen--suspend', 'zen--off', 'zen--reduced']
 ```
 
@@ -19,7 +19,7 @@ Try it: `pnpm install && pnpm dev`, open: http://localhost:5173 and shrink the p
 <script>
 	...
 	import { onMount } from 'svelte';
-	import twZenInit from 'tw-zen/init.js';
+	import twZenInit from 'tw-zen-plugin/init.js';
 
 	onMount(() => {
 		twZenInit();

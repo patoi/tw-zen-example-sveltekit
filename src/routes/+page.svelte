@@ -2,7 +2,7 @@
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 	import { onMount } from 'svelte';
-	import twZenInit from 'tw-zen/init.js';
+	import twZenInit from 'tw-zen-plugin/init.js';
 
 	onMount(() => {
 		twZenInit();
